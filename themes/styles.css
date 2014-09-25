@@ -53,7 +53,11 @@ img{
 #homeContent img{
 	max-width: 100%;
 	max-height: 428px;
+	box-shadow: 6px 2.5px 4px rgba(28, 187, 180, 0.15);
+
+	mask: url(img/star.png) top left / cover;
 }
+
 
 h2{
 	text-align:center;
@@ -81,6 +85,13 @@ h3{
 	background-color: #1cbbb4;
 	padding:10px;
 	margin:0px;
+}
+
+h4{
+	text-align:center;
+	color: white;
+	font-family: headings;
+	font-size: 1.2em;
 }
 
 table{
@@ -132,7 +143,7 @@ td{
 
 .featured_content{
 	padding: 0;
-	margin: 0;
+	margin-top: 5%;
 	list-style: none;
   
 	display: -webkit-box;
@@ -151,20 +162,31 @@ td{
 }
 
 .box_of_3{
-	width:20%;
+	width:30%;
 	height:auto;
 	margin:auto;
 
 	background: rgb(28, 187, 180);
   	padding: 5px;
-  
-  	/*line-height: 150px;*/
-  	color: white;
-  	font-weight: bold;
-  	font-size: 24px;
-  	font-family: headings;
-  	text-align: center;
+
 }
+
+/*.cssMask {
+  width:306px;
+  max-height:203px;
+  position:absolute;
+  top:0;
+  left:0;
+  background:url(img/circle.png) 0 0 no-repeat;}
+}*/
+
+ .box_of_3 p{
+ 	color: white;
+  	font-weight: bold;
+  	font-size: .8em;
+  	font-family: bodyFont;
+  	text-align: center;
+ }
 
 
 /* Large screens */
@@ -188,5 +210,6 @@ td{
   .box_of_3{
   	width:100%;
   	height:auto;
+  	margin-top: 3%;
   }
 }
