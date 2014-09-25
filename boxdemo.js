@@ -1,5 +1,4 @@
-
-    function init(img,imgsize) {
+function init(img,imgsize,pimg,pimgsize) {
       if (!img) {
         img = "circle.png";
       }
@@ -37,6 +36,8 @@
     addTriangle();
     addCircle();
     addImageCircle();
+    addPastryCircle();
+
 
       //setup debug draw
       // This is used to draw the shapes for debugging. Here the main purpose is to 
@@ -77,22 +78,55 @@
   function addImageCircle() {
         // create a fixed circle - this will have an image in it
     // create basic circle
-          var bodyDef = new b2BodyDef;
+    var bodyDef = new b2BodyDef;
     var fixDef = new b2FixtureDef;
     fixDef.density = .5;
     fixDef.friction = 0.1;
     fixDef.restitution = 0.2;
      
-        bodyDef.type = b2Body.b2_dynamicBody;
+    bodyDef.type = b2Body.b2_dynamicBody;
     scale = Math.floor(Math.random()*imgsize) + imgsize/2;
-        fixDef.shape = new b2CircleShape(scale);
+    fixDef.shape = new b2CircleShape(scale);
 
     bodyDef.position.x = scale*2;
     bodyDef.position.y = scale*2;
-          var data = { imgsrc: img,
-           imgsize: imgsize,
-       bodysize: scale
-        }
+    var data = { 
+      imgsrc: img,
+      imgsize: imgsize,
+      bodysize: scale
+    }
+    bodyDef.userData = data;
+
+
+      
+    var body = world.CreateBody(bodyDef).CreateFixture(fixDef);
+    //body.GetBody().SetMassData(new b2MassData(new b2Vec2(0,0),0,50));
+    body.GetBody().ApplyImpulse(
+      new b2Vec2(100000,100000),
+      body.GetBody().GetWorldCenter()
+    );
+   }
+
+    function addPastryCircle() {
+        // create a fixed circle - this will have an image in it
+    // create basic circle
+    var bodyDef = new b2BodyDef;
+    var fixDef = new b2FixtureDef;
+    fixDef.density = .5;
+    fixDef.friction = 0.1;
+    fixDef.restitution = 0.2;
+     
+    bodyDef.type = b2Body.b2_dynamicBody;
+    scale = Math.floor(Math.random()*imgsize) + imgsize/2;
+    fixDef.shape = new b2CircleShape(scale);
+
+    bodyDef.position.x = scale*2;
+    bodyDef.position.y = scale*2;
+    var data = { 
+      imgsrc: pimg,
+      imgsize: pimgsize,
+      bodysize: scale
+    }
     bodyDef.userData = data;
 
 
@@ -107,7 +141,7 @@
 
    function addCircle() {
      // create basic circle
-           var bodyDef = new b2BodyDef;
+      var bodyDef = new b2BodyDef;
      var fixDef = new b2FixtureDef;
      fixDef.density = .5;
      fixDef.friction = 0.1;
@@ -119,9 +153,17 @@
      fixDef.shape = new b2CircleShape(
         scale*(Math.random()) //radius
      );
-              bodyDef.position.x = (canvaswidth-scale*2)*Math.random() + scale*2;
-        bodyDef.position.y = canvasheight- (scale*Math.random() +scale*2);
-        world.CreateBody(bodyDef).CreateFixture(fixDef);
+      bodyDef.position.x = (canvaswidth-scale*2)*Math.random() + scale*2;
+      bodyDef.position.y = canvasheight- (scale*Math.random() +scale*2);
+      world.CreateBody(bodyDef).CreateFixture(fixDef);
+
+       // var data = { 
+       //    imgsrc: 'img/cake_home_tiny.png',
+       //    imgsize: 2,
+       //    bodysize: scale
+       //  }
+       //  bodyDef.userData = data;
+
    }
 
    // Update the world display and add new objects as appropriate
@@ -130,17 +172,24 @@
     context.clearRect(0,0,canvaswidth,canvasheight);
         world.ClearForces();
       
-        processObjects();
-        var M = Math.random();
-        if (M < .01) {
-          addImageCircle();
+    processObjects();
+    var M = Math.random();
+
+    if (M < .01) {
+      addImageCircle();
     }
-    else if (M < .04) {
-      addTriangle();
+    else if (M < .03) {
+      addPastryCircle();
     }
+    // else if (M < .04) {
+    //   addTriangle();
+    // }
     else if (M > .99) {
       addCircle();
     }
+    //  else if (M > .04) {
+    //   addPastryCircle();
+    // }
    }
 
    // Draw the updated display
@@ -239,6 +288,9 @@
      }
    }
  };
+
+
+
 
 
 
