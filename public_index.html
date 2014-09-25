@@ -35,7 +35,11 @@
       $(function () {
         $("[data-role=panel]").panel().enhanceWithin();
       });
+      
+      $("#picfoot").attr('width',$('#homepic').width());
+      
     });
+
   </script>
 
 </head>
@@ -58,17 +62,20 @@
       <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
       <div class="bignav" data-role="navbar" data-theme="a">
         <ul>
-          <li><a href="#home" class="ui-btn">Home</a></li>
-          <li><a href="#about" class="ui-btn">About</a></li>
-          <li><a href="#products" class="ui-btn">Products</a></li>
-          <li><a href="#services" class="ui-btn">Services</a></li>
-          <li><a href="#contact" class="ui-btn">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
     <div data-role="content" data-theme="a" class="ui-content" id="homeContent">
 
-      <div id="imgback"><img src="img/home2.jpg" alt="Cake Slice"/></div>
+      <div id="imgback">
+        <img id="homepic" src="img/home2.jpg" alt="Cake Slice"/>
+        <div id="picfoot">COME VISIT US AT: 5492 Universal Boulevard, Orlando FL, 32813</div>
+      </div>
       <h2>Welcome to Dolcissimo Bakery!</h2>
       <div class="margin-content">	
         <p>Here at Dolcissimo everything is made from scratch and our number one priority is excellence in food quality and service quality. Take a look around and come visit us soon for a sweet experience.</p>

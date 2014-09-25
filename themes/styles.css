@@ -45,15 +45,15 @@ img{
 	text-align: center;
 }
 
-#imgback{
-	background-color: rgba(28, 187, 180, 0.15);
+#picfoot{
+	background-color: rgb(28, 187, 180);
 
 }
 
 #homeContent img{
 	max-width: 100%;
 	max-height: 428px;
-	box-shadow: 6px 2.5px 4px rgba(28, 187, 180, 0.15);
+/*	box-shadow: 6px 2.5px 4px rgba(28, 187, 180, 0.15);*/
 
 	mask: url(img/star.png) top left / cover;
 }
