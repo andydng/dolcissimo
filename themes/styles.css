@@ -1,4 +1,5 @@
 /* General CSS changes*/	
+
 @font-face {
     font-family: scriptFont;
     src:url(../fonts/dancing-script.regular.ttf)
@@ -29,13 +30,19 @@ img{
 	max-width:100%;
 }
 
+.bignav ul li{
+	color: rgb(28, 187, 180);
+}
+
+
 #homeContent, #aboutContent, #productsContent, #servicesContent, #contactContent, #cakesContent, #cupcakesContent, #pastriesContent{
 	padding:0px;
 	margin:0px;
 }
 
-.margin-content{
-	margin:1em;
+#homeContent img{
+	width:100%;
+	
 }
 
 h2{
@@ -108,6 +115,48 @@ td{
 }
 
 
+.margin-content{
+	margin:1em;
+	color: rgb(28, 187, 180);
+}
+
+.featured_content{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+  
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: space-around;
+	height:5%;
+}
+
+.box_of_3{
+	width:20%;
+	height:auto;
+	margin:auto;
+
+	background: rgb(28, 187, 180);
+  	padding: 5px;
+  
+  	/*line-height: 150px;*/
+  	color: white;
+  	font-weight: bold;
+  	font-size: 24px;
+  	font-family: headings;
+  	text-align: center;
+}
+
+
 /* Large screens */
 @media all and (min-width: 600px) { /*Between max screen size and 600*/
   .ui-header > .ui-btn {display:none;} /*Hide hamburger tab*/
@@ -115,7 +164,19 @@ td{
     display: none;
   }
 
+
 }
 @media (max-width: 599px) and (min-width: 260px) {
-  .bignav {display:none;} /*Hide big nav*/
+  .bignav {display:none;
+  } /*Hide big nav*/
+
+  .featured_content{
+
+  	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+  }
+  .box_of_3{
+  	width:100%;
+  	height:auto;
+  }
 }
