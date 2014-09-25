@@ -63,9 +63,20 @@ img{
 
 }
 
+.homeHead{
+	background-color: white !important;
+	border:none !important;
+}
+
+.logo{
+/*	margin: 0 !important;
+	padding: 0 !important;*/
+} 
+
 #home{
 	overflow: visible;
 }
+
 #homeContent, #aboutContent, #productsContent, #servicesContent, #contactContent, #cakesContent, #cupcakesContent, #pastriesContent{
 	padding:0px;
 	margin:0px;
