@@ -60,26 +60,33 @@
     <div data-role="header" data-position="fixed" >
       <h1><img src="img/logo.png" alt="logo" class="logo"/></h1>    
       <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
-      <div class="bignav" data-role="navbar" data-theme="a">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
     </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
+    </div>
+
     <div data-role="content" data-theme="a" class="ui-content" id="homeContent">
 
       <div id="imgback">
         <img id="homepic" src="img/home2.jpg" alt="Cake Slice"/>
         <div id="picfoot">COME VISIT US AT: 5492 Universal Boulevard, Orlando FL, 32813</div>
       </div>
+
+
       <h2>Welcome to Dolcissimo Bakery!</h2>
       <div class="margin-content">	
         <p>Here at Dolcissimo everything is made from scratch and our number one priority is excellence in food quality and service quality. Take a look around and come visit us soon for a sweet experience.</p>
-
+<!-- 
         <ul class="featured_content">
           <li class="box_of_3">
             <h4>Pumpkin Spice Sale</h4>
@@ -92,18 +99,26 @@
           <li class="box_of_3">
             <h4>The Bike Man</h4>
           </li>
-        </ul>
+        </ul> -->
 
         <ul class="featured_content">
           <li class="steph">
-            <img src="img/home3.jpg" alt="sweet yummy goodness">
-            <p>Cupcakes</p>
+            <a href="#cupcakes">
+              <img id="cuphome" src="img/cupcake_home.png" alt="sweet yummy goodness">
+              <p>Cupcakes</p>
+            </a>
           </li>
           <li class="steph">
-            <h4>We Cater</h4>
+            <a href="#cakes">
+              <img id="cakehome" src="img/cake_home.png" alt="sweet yummy goodness">
+              <p>Cakes</p>
+            </a>
           </li>
           <li class="steph">
-            <h4>The Bike Man</h4>
+            <a href="#pastries">
+              <img id="pasthome" src="img/pastry_home.png" alt="sweet yummy goodness">
+              <p>Pastries</p>
+            </a>
           </li>
         </ul>
 
@@ -116,9 +131,10 @@
     </div>
     
     <div data-role="footer" data-position="inline" class="footer" data-theme="b">
+      <p>Copyright © 2014 Dolcissimo. All rights reserved.</p>
       <a href="http://www.facebook.com"><img src="img/fb_icon.png" alt="facebook" width="35" height="35" class="socialMedia"/></a> 
       <a href="http://www.twitter.com"><img src="img/twitter_icon.png" alt="twitter" width="35" height="35" class="socialMedia"/></a>
-      <p>Copyright © 2014 Dolcissimo. All rights reserved.</p>
+      <p>CALL US: 407-342-8630</p>
     </div>
     
   </div>

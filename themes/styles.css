@@ -30,11 +30,42 @@ img{
 	max-width:100%;
 }
 
+/*.bignav hr{
+	text-decoration: none;
+	color: rgb(28, 187, 180);
+	background-color: rgb(28, 187, 180);
+	border:none;
+
+}*/
+
+.bignav ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    border-top: solid rgb(28, 187, 180);
+    border-bottom: solid rgb(28, 187, 180);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*padding: 1%;*/
+}
+.bignav ul li{
+	display:inline;
+}
 .bignav ul li a{
-	background-color: rgba(0, 0, ,0, .6) !important;
+	color: rgb(28, 187, 180);
+	text-decoration: none;
+	padding: 4.5%;
+	font-size: 1em;
+
 }
 
-
+#home{
+	overflow: visible;
+}
 #homeContent, #aboutContent, #productsContent, #servicesContent, #contactContent, #cakesContent, #cupcakesContent, #pastriesContent{
 	padding:0px;
 	margin:0px;
@@ -43,6 +74,7 @@ img{
 
 #homeContent{
 	text-align: center;
+
 }
 
 #picfoot{
@@ -54,8 +86,8 @@ img{
 	max-width: 100%;
 	max-height: 428px;
 /*	box-shadow: 6px 2.5px 4px rgba(28, 187, 180, 0.15);*/
-
-	mask: url(img/star.png) top left / cover;
+/*
+	mask: url(img/star.png) top left / cover;*/
 }
 
 
@@ -109,13 +141,17 @@ td{
 
 .footer{
 	min-height:40px;
-	text-align:center;
+	text-align: center;
 }
+
 
 .footer p{
 	margin:1em;
 	font-size:0.7em;
+	display: inline;
+	padding: 5%;
 }
+
 
 .socialMedia{
 	float:right;
@@ -161,15 +197,6 @@ td{
 	height:5%;
 }
 
-.box_of_3{
-	width:30%;
-	height:auto;
-	margin:auto;
-
-	background: rgb(28, 187, 180);
-  	padding: 5px;
-
-}
 
 .steph{
 	width:30%;
@@ -180,22 +207,20 @@ td{
 
 }
 
-/*.cssMask {
-  width:306px;
-  max-height:203px;
-  position:absolute;
-  top:0;
-  left:0;
-  background:url(img/circle.png) 0 0 no-repeat;}
-}*/
+.steph a{
+	text-decoration: none;
+}
 
- .box_of_3 p{
- 	color: white;
-  	font-weight: bold;
-  	font-size: .8em;
-  	font-family: bodyFont;
-  	text-align: center;
- }
+#cuphome{
+	width:45%;
+}
+#cakehome{
+	width:50%;
+}
+#pasthome{
+	width:55%;
+}
+
 
 
 /* Large screens */
@@ -216,8 +241,8 @@ td{
   	-webkit-flex-flow: column wrap;
 	flex-flow: column wrap;
   }
-  .box_of_3{
-  	width:100%;
+  .steph,#pasthome,#cakehome,#cuphome{
+  	width:50%;
   	height:auto;
   	margin-top: 3%;
   }
