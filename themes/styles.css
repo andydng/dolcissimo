@@ -40,12 +40,13 @@ img{
 
 .bignav ul{
 	list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
     text-decoration: none;
     border-top: solid rgb(28, 187, 180);
     border-bottom: solid rgb(28, 187, 180);
+   	max-width: 800px;
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 10px;
@@ -66,6 +67,7 @@ img{
 .homeHead{
 	background-color: white !important;
 	border:none !important;
+
 }
 
 .logo{
@@ -85,11 +87,8 @@ img{
 
 #homeContent{
 	text-align: center;
-
-}
-
-#picfoot{
-	background-color: rgb(28, 187, 180);
+	max-width: 800px;
+	margin: 0 auto;
 
 }
 
@@ -101,6 +100,14 @@ img{
 	mask: url(img/star.png) top left / cover;*/
 }
 
+#picfoot{
+	background-color: rgb(28, 187, 180);
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+
 
 h2{
 	text-align:center;
@@ -108,6 +115,7 @@ h2{
 	border-bottom: 2px solid #1cbbb4;
 	padding-bottom: 15px;
 	font-family: headings;
+
 }
 
 .quotemarks{
@@ -151,7 +159,7 @@ td{
 }
 
 .footer{
-	min-height:40px;
+	min-height:10%;
 	text-align: center;
 }
 
@@ -159,10 +167,28 @@ td{
 .footer p{
 	margin:1em;
 	font-size:0.7em;
+	padding-left: 5%;
+	padding-right: 5%;
 	display: inline;
-	padding: 5%;
 }
 
+.foothome{
+	max-width: 800px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 1%;
+	padding-bottom: 1%;
+
+}
+
+
+/*.footLeft{
+	float: left;
+}*/
+
+/*.footRight{
+	float: right;
+}*/
 
 .socialMedia{
 	float:right;
@@ -190,6 +216,7 @@ td{
 
 .featured_content{
 	padding: 0;
+	margin: 0 auto;
 	margin-top: 5%;
 	list-style: none;
   
@@ -206,6 +233,7 @@ td{
 	align-items: stretch;
 	/*align-content: space-around;*/
 	height:5%;
+	max-width: 800px;
 }
 
 
@@ -247,14 +275,26 @@ td{
   .bignav {display:none;
   } /*Hide big nav*/
 
-  .featured_content{
+  .foothome{
+  	width: 100%;
 
-  	-webkit-flex-flow: column wrap;
-	flex-flow: column wrap;
   }
-  .steph,#pasthome,#cakehome,#cuphome{
-  	width:50%;
-  	height:auto;
-  	margin-top: 3%;
+  .foothome p{
+  	padding: 0;
   }
+}
+@media (max-width: 480px){
+	.featured_content{
+
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+ 	}
+  	.steph,#pasthome,#cakehome,#cuphome{
+  		width:50%;
+  		height:auto;
+  		margin-top: 15%;
+  	}
+  	.foothome p{
+	  	display: block;
+	  }
 }
