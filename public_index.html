@@ -21,6 +21,7 @@
   <script type="text/javascript">
     (function(window, $, PhotoSwipe){
       $(document).ready(function(){
+        // saying .gallery is undefined
         $(".gallery a").photoSwipe({
           enableMouseWheel: false,
           enableKeyboard: false
@@ -65,7 +66,7 @@
 
       <div class="socialMedia">
         <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
-        <a href="http://www.twitter.com"><img class="fb" src="img/fb_top.png" alt="twitter"/></a>
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
       </div>
 
       <img src="img/logo2.png" alt="logo" class="logo"/>  
@@ -150,29 +151,42 @@
       <div class="foothome">
         <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
         <p class="footRight">CALL US: 407-342-8630</p>
-      <!-- <a href="http://www.facebook.com"><img src="img/fb_icon.png" alt="facebook" width="35" height="35" class="socialMedia"/></a> 
-      <a href="http://www.twitter.com"><img src="img/twitter_icon.png" alt="twitter" width="35" height="35" class="socialMedia"/></a> -->
-
+      </div>
     </div>
-    
-  </div>
+
   </div>
   
 
   <!--ABOUT PAGE-->
   <div data-role="page" data-theme="a" id="about">
-    <div data-role="header" data-position="fixed" >
-      <h1><img src="img/logo.png" alt="logo" class="logo"/></h1>
-      <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a> 
-      <div class="bignav" data-role="navbar" data-theme="a">
-        <ul>
-          <li><a href="#home" class="ui-btn">Home</a></li>
-          <li><a href="#about" class="ui-btn">About</a></li>
-          <li><a href="#products" class="ui-btn">Products</a></li>
-          <li><a href="#services" class="ui-btn">Services</a></li>
-          <li><a href="#contact" class="ui-btn">Contact</a></li>
-        </ul>
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
       </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
     </div>
   
     <div data-role="content" data-theme="a" class="ui-content" id="aboutContent">
@@ -185,9 +199,10 @@
     </div>
     
     <div data-role="footer" data-position="inline" class="footer" data-theme="b">
-      <a href="http://www.facebook.com"><img src="img/fb_icon.png" alt="facebook" width="35" height="35" class="socialMedia"/></a> 
-      <a href="http://www.twitter.com"><img src="img/twitter_icon.png" alt="twitter" width="35" height="35" class="socialMedia"/></a>
-      <p>Copyright © 2014 Dolcissimo. All rights reserved.</p>
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
     </div>
       
   </div>
@@ -195,36 +210,70 @@
 
   <!--PRODUCTS PAGE-->
   <div data-role="page" data-theme="a" id="products">
-    <div data-role="header" data-position="fixed" >
-      <h1><img src="img/logo.png" alt="logo" class="logo"/></h1>
-      <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a> 
-      <div class="bignav" data-role="navbar" data-theme="a">
-        <ul>
-          <li><a href="#home" class="ui-btn">Home</a></li>
-          <li><a href="#about" class="ui-btn">About</a></li>
-          <li><a href="#products" class="ui-btn">Products</a></li>
-          <li><a href="#services" class="ui-btn">Services</a></li>
-          <li><a href="#contact" class="ui-btn">Contact</a></li>
-        </ul>
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
       </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
     </div>
   
     <div data-role="content" data-theme="a" class="ui-content" id="productsContent">
       <h2>Our Products</h2>
       <div class="margin-content">	
         <p>We offer a variety of baked goods, and we are constantly innovating to bring you the best product in town. Take a look around and if you see something you like call us and we'll make it just for you.</p>
-        <ul data-role="listview" data-theme="a" id="productList">
-           <li><a href="#cakes"><img src="img/cakes.jpg" alt="Cakes" /><h4>Cakes</h4></a></li>
-           <li><a href="#cupcakes"><img src="img/cupcakes.jpg" alt="Cupcakes" /><h4>Cupcakes</h4></a></li>
-           <li><a href="#pastries"><img src="img/pastries.jpg" alt="Pastries" /><h4>Pastries</h4></a></li>
+
+        <ul class="featured_content">
+          <li class="steph">
+            <a href="#cakes">
+              <img id="cakespage" src="img/cakes.jpg" alt="sweet yummy goodness">
+              <p>Cakes</p>
+            </a>
+          </li>
+          <li class="steph">
+            <a href="#cupcakes">
+              <img id="cupcakespage" src="img/cupcakes.jpg" alt="sweet yummy goodness">
+              <p>Cupcakes</p>
+            </a>
+          </li>
+          <li class="steph">
+            <a href="#pastries">
+              <img id="pastriespage" src="img/pastries.jpg" alt="sweet yummy goodness">
+              <p>Pastries</p>
+            </a>
+          </li>
         </ul>
+
       </div>
     </div>
     
     <div data-role="footer" data-position="inline" class="footer" data-theme="b">
-      <a href="http://www.facebook.com"><img src="img/fb_icon.png" alt="facebook" width="35" height="35" class="socialMedia"/></a> 
-      <a href="http://www.twitter.com"><img src="img/twitter_icon.png" alt="twitter" width="35" height="35" class="socialMedia"/></a>
-      <p>Copyright © 2014 Dolcissimo. All rights reserved.</p>
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
     </div>
       
   </div> 
@@ -232,18 +281,34 @@
  
   <!--SERVICES PAGE-->
   <div data-role="page" data-theme="a" id="services">
-    <div data-role="header" data-position="fixed" >
-      <h1><img src="img/logo.png" alt="logo" class="logo"/></h1>
-      <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
-      <div class="bignav" data-role="navbar" data-theme="a">
-        <ul>
-          <li><a href="#home" class="ui-btn">Home</a></li>
-          <li><a href="#about" class="ui-btn">About</a></li>
-          <li><a href="#products" class="ui-btn">Products</a></li>
-          <li><a href="#services" class="ui-btn">Services</a></li>
-          <li><a href="#contact" class="ui-btn">Contact</a></li>
-        </ul>
-      </div> 
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
     </div>
   
     <div data-role="content" data-theme="a" class="ui-content" id="servicesContent">
@@ -262,9 +327,10 @@
     </div>
     
     <div data-role="footer" data-position="inline" class="footer" data-theme="b">
-      <a href="http://www.facebook.com"><img src="img/fb_icon.png" alt="facebook" width="35" height="35" class="socialMedia"/></a> 
-      <a href="http://www.twitter.com"><img src="img/twitter_icon.png" alt="twitter" width="35" height="35" class="socialMedia"/></a>
-      <p>Copyright © 2014 Dolcissimo. All rights reserved.</p>
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
     </div>
       
   </div>
@@ -272,18 +338,34 @@
   
   <!--CONTACT PAGE-->
   <div data-role="page" data-theme="a" id="contact">
-    <div data-role="header" data-position="fixed" >
-      <h1><img src="img/logo.png" alt="logo" class="logo"/></h1>
-      <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a> 
-      <div class="bignav" data-role="navbar" data-theme="a">
-        <ul>
-          <li><a href="#home" class="ui-btn">Home</a></li>
-          <li><a href="#about" class="ui-btn">About</a></li>
-          <li><a href="#products" class="ui-btn">Products</a></li>
-          <li><a href="#services" class="ui-btn">Services</a></li>
-          <li><a href="#contact" class="ui-btn">Contact</a></li>
-        </ul>
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
       </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
     </div>
   
     <div data-role="content" data-theme="a" class="ui-content" id="contactContent">
@@ -336,9 +418,10 @@
     </div>
     
     <div data-role="footer" data-position="inline" class="footer" data-theme="b">
-      <a href="http://www.facebook.com"><img src="img/fb_icon.png" alt="facebook" width="35" height="35" class="socialMedia"/></a> 
-      <a href="http://www.twitter.com"><img src="img/twitter_icon.png" alt="twitter" width="35" height="35" class="socialMedia"/></a>
-      <p>Copyright © 2014 Dolcissimo. All rights reserved.</p>
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
     </div>
       
   </div>       
@@ -346,19 +429,34 @@
  
   <!--CAKES PAGE-->
   <div data-role="page" data-theme="a" id="cakes">
-    <div data-role="header" data-position="fixed">
-      <h1><img src="img/logo.png" alt="logo" class="logo"/></h1>
-      <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a> 
-      <div class="bignav" data-role="navbar" data-theme="a">
-        <ul>
-          <li><a href="#home" class="ui-btn">Home</a></li>
-          <li><a href="#about" class="ui-btn">About</a></li>
-          <li><a href="#products" class="ui-btn">Products</a></li>
-          <li><a href="#services" class="ui-btn">Services</a></li>
-          <li><a href="#contact" class="ui-btn">Contact</a></li>
-        </ul>
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
       </div>
-      <a href="#" data-rel="back" data-theme="b" data-icon="back" data-iconpos="notext"></a>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
     </div>
   
     <div data-role="content" data-theme="a" class="ui-content" id="cakesContent">
@@ -375,9 +473,10 @@
     </div>
     
     <div data-role="footer" data-position="inline" class="footer" data-theme="b">
-      <a href="http://www.facebook.com"><img src="img/fb_icon.png" alt="facebook" width="35" height="35" class="socialMedia"/></a> 
-      <a href="http://www.twitter.com"><img src="img/twitter_icon.png" alt="twitter" width="35" height="35" class="socialMedia"/></a>
-      <p>Copyright © 2014 Dolcissimo. All rights reserved.</p>
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
     </div>
       
   </div> 
@@ -385,19 +484,34 @@
   
   <!--CUPCAKES PAGE-->
   <div data-role="page" data-theme="a" id="cupcakes">
-    <div data-role="header" data-position="fixed">
-      <h1><img src="img/logo.png" alt="logo" class="logo"/></h1>
-      <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a> 
-      <div class="bignav" data-role="navbar" data-theme="a">
-        <ul>
-          <li><a href="#home" class="ui-btn">Home</a></li>
-          <li><a href="#about" class="ui-btn">About</a></li>
-          <li><a href="#products" class="ui-btn">Products</a></li>
-          <li><a href="#services" class="ui-btn">Services</a></li>
-          <li><a href="#contact" class="ui-btn">Contact</a></li>
-        </ul>
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
       </div>
-      <a href="#" data-rel="back" data-theme="b" data-icon="back" data-iconpos="notext"></a>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
     </div>
   
     <div data-role="content" data-theme="a" class="ui-content" id="cupcakesContent">
@@ -414,9 +528,10 @@
     </div>
     
     <div data-role="footer" data-position="inline" class="footer" data-theme="b">
-      <a href="http://www.facebook.com"><img src="img/fb_icon.png" alt="facebook" width="35" height="35" class="socialMedia"/></a> 
-      <a href="http://www.twitter.com"><img src="img/twitter_icon.png" alt="twitter" width="35" height="35" class="socialMedia"/></a>
-      <p>Copyright © 2014 Dolcissimo. All rights reserved.</p>
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
     </div>
       
   </div> 
@@ -424,19 +539,34 @@
     
   <!--PASTRIES PAGE-->
   <div data-role="page" data-theme="a" id="pastries">
-    <div data-role="header" data-position="fixed">
-      <h1><img src="img/logo.png" alt="logo" class="logo"/></h1>
-      <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
-      <div class="bignav" data-role="navbar" data-theme="a">
-        <ul>
-          <li><a href="#home" class="ui-btn">Home</a></li>
-          <li><a href="#about" class="ui-btn">About</a></li>
-          <li><a href="#products" class="ui-btn">Products</a></li>
-          <li><a href="#services" class="ui-btn">Services</a></li>
-          <li><a href="#contact" class="ui-btn">Contact</a></li>
-        </ul>
-      </div> 
-      <a href="#" data-rel="back" data-theme="b" data-icon="back" data-iconpos="notext"></a>
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
     </div>
   
     <div data-role="content" data-theme="a" class="ui-content" id="pastriesContent">
@@ -453,10 +583,11 @@
     </div>
     
     <div data-role="footer" data-position="inline" class="footer" data-theme="b">
-      <a href="http://www.facebook.com"><img src="img/fb_icon.png" alt="facebook" width="35" height="35" class="socialMedia"/></a> 
-      <a href="http://www.twitter.com"><img src="img/twitter_icon.png" alt="twitter" width="35" height="35" class="socialMedia"/></a>
-      <p>Copyright © 2014 Dolcissimo. All rights reserved.</p>
-    </div> 
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
+    </div>
       
   </div>     
 </body>
