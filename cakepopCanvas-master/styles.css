@@ -550,6 +550,9 @@ td{
 
 }
 @media (max-width: 599px) and (min-width: 260px) {
+	canvas{
+		display: none;
+	}
 	.nav-trigger, label{
 		display: block;
 	}
