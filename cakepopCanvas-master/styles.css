@@ -543,8 +543,21 @@ td{
 /*.nav-search{
 	display: none;
 }*/
+#contactContent hr{
+	border-color:white;
+	border:white;
+	background-color:white;
+	background:white;
+	color:white;
+}
+	#contactContent > hr:nth-child(2),#aboutContent  > hr:nth-child(2),#productsContent > hr:nth-child(2),#servicesContent > hr:nth-child(2){
+		display: none;
+		text-decoration: none;
+		color: rgb(28, 187, 180);
+		border:none;
+	}
 
-	#contactContent h2{
+	#contactContent h2,#aboutContent h2,#productsContent h2,#servicesContent h2{
 		display: none;
 	}
 
@@ -572,9 +585,9 @@ td{
 /*  .nav-search{
 	display: inline-block;
 }*/
-  #contactContent h2{
-	display: inline-block;
-}
+	#contactContent h2,#aboutContent h2,#productsContent h2,#servicesContent h2{
+		display: block;
+	}
 
   .bignav {display:none;
   } /*Hide big nav*/

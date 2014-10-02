@@ -6,13 +6,8 @@
 
 	<title>Dolcissimo - Services</title>
 
-	<link rel="stylesheet" href="styles.css"  />
-
-	<script type="text/javascript" src="ivank.js"></script><style type="text/css"></style>
-	<script type="text/javascript" src="Box2dWeb-2.1.a.3.min.js"></script>
-  	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-	<script src="jcanvas.min.js"></script>
-	<script type="text/javascript" src="andy.js"></script>
+  <link rel="stylesheet" href="hamburger.css"  />
+  <link rel="stylesheet" href="styles.css"  />
 
   <style>
 
@@ -25,6 +20,19 @@
 </head>
 
 <body style="margin:0">
+
+  <ul class="navigation">
+    <li class="nav-item"><a href="home.html">Home</a></li>
+    <li class="nav-item"><a href="about.html">About</a></li>
+    <li class="nav-item"><a href="products.html">Products</a></li>
+    <li class="nav-item"><a href="services.html">Services</a></li>
+    <li class="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger"></label>
+
+  <div class="site-wrap">
 
 	<div class="homeHead" >
     	<div class="socialMedia">
@@ -66,9 +74,12 @@
 
 	<div id="servicesContent">
       <div class="margin-content">
+        <h2>Services<h2>
+        <!-- <hr> -->
+        <br/>
         <div class="serviceimg"><img src="img/retail.jpg" alt="Retail" /></div>
         <br/>
-        <br/>
+        
       	<h3>Retail Store</h3>
         <p>Open 7 days a week from 7:00am to 10pm, our retail store has always fresh baked bread, pastries and smiles coming out of the oven. With a wide menu, we are able to please all taste buds. Come anytime, for breakfast, lunch, dinner, a snack or just a coffee. We'll always have something tasteful to feed your hunger. And with a smile in our faces.</p>
         <div class="serviceimg"><img src="img/catering.jpg" alt="Catering" /></div>
@@ -90,7 +101,7 @@
 	    <p class="footRight">CALL US: 407-342-8630</p>
     </div>
 
-  
+  </div>
 
 </body>
 
