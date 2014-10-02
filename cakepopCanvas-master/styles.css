@@ -1,0 +1,471 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+    font-family: 'scriptFont';
+    src: url(../fonts/dancing-script.regular.ttf);
+}
+
+@font-face {
+    font-family: 'headings';
+    src: url(../fonts/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: 'bodyFont';
+    src: url(../fonts/open-sans.regular.ttf);
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+/*	font-family:bodyFont, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+
+
+img{
+	max-width:100%;
+}
+
+/*.bignav ul{
+	list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    border-top: solid rgb(28, 187, 180);
+    border-bottom: solid rgb(28, 187, 180);
+   	max-width: 800px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.bignav ul li{
+	display:inline;
+}
+.bignav ul li a{
+	color: rgb(28, 187, 180);
+	text-decoration: none;
+	padding: 4.5%;
+	font-size: 1em;
+	cursor: pointer;
+
+}
+.bignav ul li a:hover{
+	background: url(img/fb_rollover.png);
+}*/
+
+.homeHead{
+	background-color: white;
+	border:none;
+	text-align: center;
+	display: flex;
+
+	height:5%;
+	max-width: 800px;
+
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+
+	-webkit-flex-direction: row nowrap;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	height:5%;
+	max-width: 800px;
+}
+
+.socialMedia{
+	width:30%;
+	margin:0 auto;
+
+	padding-top: 0;
+	padding-bottom: 0;
+  	padding-left: 5px;
+  	padding-right: 5px;
+}
+
+.quotes{
+	width:50%;
+	margin:0 auto;
+
+	padding-top: 0;
+	padding-bottom: 0;
+  	padding-left: 5px;
+  	padding-right: 5px;
+}
+
+
+.fb{
+	width: 15%;
+  	padding-right: 2%;
+
+}
+
+.logo{
+	margin: 0;
+	padding: 0;
+	width: 30%;
+
+} 
+
+
+
+#home{
+	overflow: visible;
+}
+
+#homeContent, #aboutContent, #productsContent, #servicesContent, #contactContent, #cakesContent, #cupcakesContent, #pastriesContent{
+	padding:0px;
+	margin:0px;
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+#homeContent{
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+#homeContent img{
+	max-width: 100%;
+	max-height: 428px;
+
+/*	box-shadow: 6px 2.5px 4px rgba(28, 187, 180, 0.15);*/
+/*
+	mask: url(img/star.png) top left / cover;*/
+}
+
+#homepic{
+	padding: 0;
+	margin: 0;
+}
+
+#imgback{
+	margin: 0 auto;
+	padding: 0;
+}
+
+#picfoot{
+	background-color: rgb(28, 187, 180);
+	max-width: 800px;
+	margin: 0 auto;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	color: white;
+
+}
+
+
+
+h2{
+	text-align:center;
+	color: #1cbbb4;
+	border-bottom: 2px solid #1cbbb4;
+	padding-bottom: 15px;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.quotemarks{
+	color: #1cbbb4;
+}
+
+.quote{
+	text-align:center;
+	font-size:2.3em;
+	font-family:scriptFont;
+	line-height:1;
+}
+
+h3{
+	font-family: 'Raleway', sans-serif;
+	text-align:center;
+	color: #ffffff;
+	background-color: #1cbbb4;
+	padding:10px;
+	margin:0px;
+}
+
+h4{
+	text-align:center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+}
+
+table{
+	margin-top:30px;
+	width:100%;
+}
+
+td{
+	padding-bottom: 20px;
+}
+
+#aboutContent p {
+	padding-bottom:15px;
+}
+
+/*.footer{
+	min-height:10%;
+	width: 100%;
+	text-align: center;*/
+/*	border: 30px solid transparent !important;*/
+/*	background-color: white !important;*/
+/*	border-image-source: url("img/border.png") !important;
+    border-image-repeat: repeat !important;*/
+/*
+    border: 30px solid transparent;
+    border-image: url('border.png');
+    border-image-slice: 30;
+    border-image-width: 10px;
+    border-image-outset: 0;
+    border-image-repeat: round;
+*/
+/*    -moz-border-image:url("../img/border.png") 25 30 10 20 repeat !important;*/
+/*    -webkit-border-image:url("../img/border.png") 25 30 10 20 repeat !important;*/
+/*    border-image:url("../img/border.png") 25 30 10 20 repeat !important;
+    border-style: solid !important;*/
+
+/*}*/
+
+
+.foothome p{
+	margin:1em;
+	font-size:0.7em;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: inline;
+}
+
+.foothome{
+	min-height:10%;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: rgb(28, 187, 180);
+	color: white;
+
+}
+
+
+#productList{
+	margin-top:1.5em;
+}
+
+.contactBold{
+	font-weight:bold;
+	text-transform: uppercase;
+	padding-right:20px;
+}
+
+.gallery{
+	text-align:center;
+}
+
+
+.margin-content{
+	margin:1em;
+	color: rgb(28, 187, 180);
+}
+.navigationcontent{
+	padding: 0;
+	margin: 0 auto;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	list-style: none;
+  
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	/*align-content: space-around;*/
+	height:5%;
+	max-width: 800px;
+	border-top: solid rgb(28, 187, 180);
+    border-bottom: solid rgb(28, 187, 180);
+
+}
+.navthing{
+	width:15%;
+	height:auto;
+	margin:auto;
+	text-align: center;
+	font-size: 1.2em;
+  	padding: 1%;
+}
+
+.navthing a{
+	text-decoration: none;
+	color: rgb(28, 187, 180);
+}
+
+.current_navthing{
+	width:15%;
+	height:auto;
+	margin:auto;
+	text-align: center;
+	font-size: 1.2em;
+  	padding: 1%;
+  	background-color: rgb(28, 187, 180);
+  	border-radius: 50%;
+  	border: double white;
+/*	background-image: url('img/border.png');*/
+/*	background: url(img/border.png);
+	background-repeat: no-repeat;
+    background-size: 100% 200px;*/
+}
+
+.current_navthing a{
+	text-decoration: none;
+	color: white;
+}
+
+.navthing:hover{
+	width:15%;
+	height:auto;
+	margin:auto;
+	text-align: center;
+	font-size: 1.2em;
+  	padding: 1%;
+  	background-color: rgba(28, 187, 180, .5);
+  	border-radius: 50%;
+  	border: double white;
+}
+
+.featured_content{
+	padding: 0;
+	margin: 0 auto;
+	margin-top: 5%;
+	list-style: none;
+  
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	/*align-content: space-around;*/
+	height:5%;
+	max-width: 800px;
+}
+
+
+.steph{
+	width:30%;
+	height:auto;
+	margin:auto;
+	font-size: 1.5em;
+  	padding: 5px;
+
+}
+
+.steph a{
+	text-decoration: none;
+	color: rgb(28, 187, 180);
+}
+
+#cuphome{
+	width:45%;
+}
+#cakehome{
+	width:50%;
+}
+#pasthome{
+	width:55%;
+}
+
+/*#products{
+	max-width: 800px;*/
+
+#products .steph{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+}
+
+.bars{
+	display: none;
+}
+/* Large screens */
+@media all and (min-width: 600px) { /*Between max screen size and 600*/
+  .ui-header > .ui-btn {display:none;} /*Hide hamburger tab*/
+  .littlenav {
+    display: none;
+  }
+
+
+}
+@media (max-width: 599px) and (min-width: 260px) {
+  .bignav {display:none;
+  } /*Hide big nav*/
+  .bars{
+  	display: block;
+
+  }
+  .socialMedia,.quotes{
+  	display: none;
+  }
+  .homeHead{
+  	background-color: rgb(28, 187, 180);
+  	width: 100%;
+  }
+  .logo{
+  	margin: 0 auto;
+  	text-align: center;
+
+  }
+
+  .foothome{
+  	width: 100%;
+  	background-color: rgb(28, 187, 180);
+  	color: white;
+
+  }
+  .foothome p{
+  	padding: 0;
+  }
+}
+@media (max-width: 480px){
+	.featured_content{
+
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+ 	}
+  	.steph,#pasthome,#cakehome,#cuphome{
+  		width:50%;
+  		height:auto;
+  		margin-top: 15%;
+  	}
+  	.foothome p{
+	  	display: block;
+	  }
+}

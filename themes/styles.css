@@ -65,8 +65,8 @@ img{
 }
 
 .homeHead{
-	background-color: white !important;
-	border:none !important;
+	background-color: white;
+	border:none;
 	text-align: center;
 	display: flex;
 
@@ -373,7 +373,7 @@ td{
   	display: none;
   }
   .homeHead{
-  	background-color: rgb(28, 187, 180) !important;
+  	background-color: rgb(28, 187, 180);
   	width: 100%;
   }
   .logo{
@@ -384,6 +384,8 @@ td{
 
   .foothome{
   	width: 100%;
+  	background-color: rgb(28, 187, 180);
+  	color: white;
 
   }
   .foothome p{

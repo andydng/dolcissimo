@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Dolcissimo Bakery</title>
+
+	<link rel="stylesheet" href="themes/dolcissimo.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<!-- 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" /> -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+  <link rel="stylesheet" href="themes/styles.css" />
+  <link rel="stylesheet" href="photoswipe/photoswipe.css" />
+
+  <script src="photoswipe/klass.min.js"></script>
+  <script src="photoswipe/code.photoswipe.jquery-3.0.4.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!--<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>-->
+  <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+  <script type="text/javascript" src="ivank.js"></script><style type="text/css"></style>
+  <script type="text/javascript" src="Box2dWeb-2.1.a.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="jcanvas.min.js"></script>
+  <script type="text/javascript" src="andy.js"></script>
+
+  <!--Photoswipe!-->
+  <script type="text/javascript">
+    // (function(window, $, PhotoSwipe){
+    //   $(document).ready(function(){
+    //     // saying .gallery is undefined
+    //     $(".gallery a").photoSwipe({
+    //       enableMouseWheel: false,
+    //       enableKeyboard: false
+    //     });
+    //   });
+    // }(window, window.jQuery, window.Code.PhotoSwipe));
+  </script>
+
+  <!--Needed for internal mypanel-->
+  <script type="text/javascript">
+    // $( document ).ready(function() {
+    //   $(function () {
+    //     $("[data-role=panel]").panel().enhanceWithin();
+    //   });
+      
+    //   $("#picfoot").attr('width',$('#homepic').width());
+      
+    // });
+
+  </script>
+
+  <style>
+    *{
+      overflow: visible !important;
+    }
+    body{
+      overflow: visible;
+      background-color: white !important;
+    }
+    canvas {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0.5;
+      overflow: scroll;
+      z-index: -1;
+    }
+/*      #over{
+        z-index: 0;
+      }*/
+  </style>
+
+</head>
+
+
+
+<body>
+  <canvas id="c" style="cursor: default"></canvas>
+
+  <div data-role="panel" id="mypanel" data-position="left" data-position-fixed="false" data-display="reveal" data-theme="a">  
+    <ul data-role="listview" class="nav-search">
+       <li>Menu</li>
+      <li><a href="#home" class="ui-btn">Home</a></li>
+      <li><a href="#about" class="ui-btn">About</a></li>
+      <li><a href="#products" class="ui-btn">Products</a></li>
+      <li><a href="#services" class="ui-btn">Services</a></li>
+      <li><a href="#contact" class="ui-btn">Contact</a></li>
+    </ul>   
+  </div> 
+
+       <!--HOME PAGE-->
+  <div data-role="page" data-theme="a" id="home">
+<!--     <div class="homeHead" data-role="header"> -->
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
+    </div>
+
+    <div data-role="content" data-theme="a" class="ui-content" id="homeContent">
+
+      <div id="imgback">
+        <img id="homepic" src="img/home2.jpg" alt="Cake Slice"/>
+        <div id="picfoot">COME VISIT US AT: 5492 Universal Boulevard, Orlando FL, 32813</div>
+      </div>
+
+
+      <h2>Welcome to Dolcissimo Bakery!</h2>
+      <div class="margin-content">	
+        <p>Here at Dolcissimo everything is made from scratch and our number one priority is excellence in food quality and service quality. Take a look around and come visit us soon for a sweet experience.</p>
+<!-- 
+        <ul class="featured_content">
+          <li class="box_of_3">
+            <h4>Pumpkin Spice Sale</h4>
+            <img src="img/home3.jpg" alt="sweet yummy goodness">
+            <p>Celebrate the beginning of fall by enjoying our delicious pumkin spice cakes, cupcakes and wonderful pumpkin chocolate chip cookies.</p>
+          </li>
+          <li class="box_of_3">
+            <h4>We Cater</h4>
+          </li>
+          <li class="box_of_3">
+            <h4>The Bike Man</h4>
+          </li>
+        </ul> -->
+
+        <ul class="featured_content">
+          <li class="steph">
+            <a href="#cupcakes">
+              <img id="cuphome" src="img/cupcake_home.png" alt="sweet yummy goodness">
+              <p>Cupcakes</p>
+            </a>
+          </li>
+          <li class="steph">
+            <a href="#cakes">
+              <img id="cakehome" src="img/cake_home.png" alt="sweet yummy goodness">
+              <p>Cakes</p>
+            </a>
+          </li>
+          <li class="steph">
+            <a href="#pastries">
+              <img id="pasthome" src="img/pastry_home.png" alt="sweet yummy goodness">
+              <p>Pastries</p>
+            </a>
+          </li>
+        </ul>
+
+        <div class="littlenav">
+          <a href="#products" data-role="button" data-theme="a">Products</a>
+          <a href="#services" data-role="button" data-theme="a">Services</a>
+          <a href="#contact" data-role="button" data-theme="a">Contact</a>
+        </div>
+      </div>  
+    </div>
+    
+    <div data-role="footer" data-position="inline" class="footer" data-theme="b">
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
+    </div>
+
+  </div>
+  
+
+  <!--ABOUT PAGE-->
+  <div data-role="page" data-theme="a" id="about">
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
+    </div>
+  
+    <div data-role="content" data-theme="a" class="ui-content" id="aboutContent">
+      <img src="img/home3.jpg" alt="Pastries"/>
+      <h2>Who Are We?</h2>	
+      <div class="margin-content">	
+        <p class="quote"><span class="quotemarks">"</span>Life is short, eat dessert first.<span class="quotemarks">"</span></p>
+        <p>Dolcissimo Bakery is a family owned and operated business based in Orlando, Fl. It all started as a hobby for Maria; she would bake cupcakes and cookies for her friends whenever she had a chance, and whenever there was a party her cakes were the most wanted. Soon she became very well known and recommended by friends, and she was encouranged by her husband Paolo to start selling her baked goods, and so she did and as they say, the rest is history. In no time Maria had so many orders that she could no longer do everything on her own and so Dolcissimo was born.</p>
+      </div>
+    </div>
+    
+    <div data-role="footer" data-position="inline" class="footer" data-theme="b">
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
+    </div>
+      
+  </div>
+  
+
+  <!--PRODUCTS PAGE-->
+  <div data-role="page" data-theme="a" id="products">
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
+    </div>
+  
+    <div data-role="content" data-theme="a" class="ui-content" id="productsContent">
+      <h2>Our Products</h2>
+      <div class="margin-content">	
+        <p>We offer a variety of baked goods, and we are constantly innovating to bring you the best product in town. Take a look around and if you see something you like call us and we'll make it just for you.</p>
+
+        <ul class="featured_content">
+          <li class="steph">
+            <a href="#cakes">
+              <img id="cakespage" src="img/cakes.jpg" alt="sweet yummy goodness">
+              <p>Cakes</p>
+            </a>
+          </li>
+          <li class="steph">
+            <a href="#cupcakes">
+              <img id="cupcakespage" src="img/cupcakes.jpg" alt="sweet yummy goodness">
+              <p>Cupcakes</p>
+            </a>
+          </li>
+          <li class="steph">
+            <a href="#pastries">
+              <img id="pastriespage" src="img/pastries.jpg" alt="sweet yummy goodness">
+              <p>Pastries</p>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    
+    <div data-role="footer" data-position="inline" class="footer" data-theme="b">
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
+    </div>
+      
+  </div> 
+  
+ 
+  <!--SERVICES PAGE-->
+  <div data-role="page" data-theme="a" id="services">
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
+    </div>
+  
+    <div data-role="content" data-theme="a" class="ui-content" id="servicesContent">
+      <h2>Services</h2>
+      <div class="margin-content">
+        <img src="img/retail.jpg" alt="Retail" />
+      	 <h3>Retail Store</h3>	
+        <p>Open 7 days a week from 7:00am to 10pm, our retail store has always fresh baked bread, pastries and smiles coming out of the oven. With a wide menu, we are able to please all taste buds. Come anytime, for breakfast, lunch, dinner, a snack or just a coffee. We'll always have something tasteful to feed your hunger. And with a smile in our faces.</p>
+        <img src="img/catering.jpg" alt="Catering" />
+      	 <h3>Catering</h3>	
+        <p>From a small get together to a wedding, Dolcissimo is the best option for your party.  We have a basic catering menu, but we don't stop there. We offer a personalized service where you imagine and we make it. Our family loves challenges and we'll try our best to make your ideas come true. Our cakes can be shaped and printed at your will and turned into artwork by your desire. Come and get a <a href="#contact">quote</a> without any commitments. </p>
+        <img src="img/wholesale.jpg" alt="Wholesale" />
+      	 <h3>Wholesale</h3>	
+        <p>If you are a restaurant, hotel, cafe, or food store and want to make some of our products a part of your menu, we gladly offer a whole sale with delivery service. We offer supplies of any of our delicious products and they can also be modified and adapted according to your needs. <a href="tel:5551234567">Call us</a> to get specific information on how we can start working as a team.</p>
+      </div>
+    </div>
+    
+    <div data-role="footer" data-position="inline" class="footer" data-theme="b">
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
+    </div>
+      
+  </div>
+  
+  
+  <!--CONTACT PAGE-->
+  <div data-role="page" data-theme="a" id="contact">
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
+    </div>
+  
+    <div data-role="content" data-theme="a" class="ui-content" id="contactContent">
+      <h2>Contact</h2>
+      <div class="margin-content">
+      
+      <table>
+          <tr>
+            <td class="contactBold">Address</td>
+            <td>6392 Valley St. <br> Orlando, FL 32835</td>
+          </tr>
+          <tr>
+            <td class="contactBold">Phone</td>
+            <td>407-284-2602</td>
+          </tr>
+          <tr>
+            <td class="contactBold">Email</td>
+            <td><a href="mailto:Dolcissimo@gmail.com">Dolcissimo@gmail.com</a></td>
+          </tr>
+          <tr>
+            <td class="contactBold">Hours</td>
+            <td>Monday - Friday <br> 9am - 5pm</td>
+          </tr>
+      </table> 
+      
+      <p>Have an event coming up and would like to get a quote? Leave your details here and we'll get in touch with you!</p>       
+      </div>
+      <div data-role="main" class="ui-content">
+        <a href="#myPopup" data-rel="popup" class="ui-btn ui-corner-all">GET QUOTE!</a>
+        <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+          <!-- <form method="post" > -->
+            <div>
+              <h3>Get a quote:</h3>
+              <label for="name" class="ui-hidden-accessible">Name:</label>
+              <input type="text" name="user" id="name" placeholder="Name">
+              <label for="phone" class="ui-hidden-accessible">Phone Number:</label>
+              <input type="text" name="tel" id="phone" placeholder="Phone Number">
+              <p>Interested in:</p>
+              <label for="cake">Cakes</label>
+              <input type="checkbox" name="product" id="cake" value="Cakes">
+              <label for="cupcake">Cupcakes</label>
+              <input type="checkbox" name="product" id="cupcake" value="Cupcakes">
+              <label for="pastry">Pastries</label>
+              <input type="checkbox" name="product" id="pastry" value="Pastries">
+              <input type="submit" data-inline="true" value="Submit">
+            </div>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+    
+    <div data-role="footer" data-position="inline" class="footer" data-theme="b">
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
+    </div>
+      
+  </div>       
+ 
+ 
+  <!--CAKES PAGE-->
+  <div data-role="page" data-theme="a" id="cakes">
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
+    </div>
+  
+    <div data-role="content" data-theme="a" class="ui-content" id="cakesContent">
+      <h2>Cakes</h2>
+      <div class="margin-content">	
+      		<div class="gallery">
+             <a href="photoswipe/images/full/1.jpg" rel="external"><img alt="Red Velvet" src="photoswipe/images/thumb/1.jpg"></a>
+             <a href="photoswipe/images/full/2.jpg" rel="external"><img alt="Carrot Cake" src="photoswipe/images/thumb/2.jpg"></a>
+             <a href="photoswipe/images/full/3.jpg" rel="external"><img alt="Chocolate Mousse" src="photoswipe/images/thumb/3.jpg"></a>
+             <a href="photoswipe/images/full/4.jpg" rel="external"><img alt="Strawberry Shortcake" src="photoswipe/images/thumb/4.jpg"></a>
+             <a href="photoswipe/images/full/5.jpg" rel="external"><img alt="Frutte Di Bosco" src="photoswipe/images/thumb/5.jpg"></a>
+           </div> 
+      </div>
+    </div>
+    
+    <div data-role="footer" data-position="inline" class="footer" data-theme="b">
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
+    </div>
+      
+  </div> 
+  
+  
+  <!--CUPCAKES PAGE-->
+  <div data-role="page" data-theme="a" id="cupcakes">
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
+    </div>
+  
+    <div data-role="content" data-theme="a" class="ui-content" id="cupcakesContent">
+      <h2>Cupcakes</h2>
+      <div class="margin-content">	
+      		<div class="gallery">
+             <a href="photoswipe/images/full/6.jpg" rel="external"><img alt="Flower Design" src="photoswipe/images/thumb/6.jpg"></a>
+             <a href="photoswipe/images/full/7.jpg" rel="external"><img alt="Vanilla Christmas" src="photoswipe/images/thumb/7.jpg"></a>
+             <a href="photoswipe/images/full/8.jpg" rel="external"><img alt="Chocolate Fudge" src="photoswipe/images/thumb/8.jpg"></a>
+             <a href="photoswipe/images/full/9.jpg" rel="external"><img alt="Vanilla and blueberry" src="photoswipe/images/thumb/9.jpg"></a>
+             <a href="photoswipe/images/full/10.jpg" rel="external"><img alt="Choco coco" src="photoswipe/images/thumb/10.jpg"></a>
+           </div>  
+      </div>
+    </div>
+    
+    <div data-role="footer" data-position="inline" class="footer" data-theme="b">
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
+    </div>
+      
+  </div> 
+    
+    
+  <!--PASTRIES PAGE-->
+  <div data-role="page" data-theme="a" id="pastries">
+    <div class="homeHead" >
+
+      <div class="socialMedia">
+        <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        <a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+
+      <img src="img/logo2.png" alt="logo" class="logo"/>  
+
+      <a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+
+
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+     <!--  <div class="bignav" data-role="navbar" data-theme="a"> -->
+    </div>
+
+    <div class="bignav">
+      <!-- <hr> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <!--  <hr> -->
+    </div>
+  
+    <div data-role="content" data-theme="a" class="ui-content" id="pastriesContent">
+      <h2>Pastries</h2>
+      <div class="margin-content">	
+          <div class="gallery">
+             <a href="photoswipe/images/full/11.jpg" rel="external"><img alt="Cannoli" src="photoswipe/images/thumb/11.jpg"></a>
+             <a href="photoswipe/images/full/12.jpg" rel="external"><img alt="Napoleons" src="photoswipe/images/thumb/12.jpg"></a>
+             <a href="photoswipe/images/full/13.jpg" rel="external"><img alt="Cream puff" src="photoswipe/images/thumb/13.jpg"></a>
+             <a href="photoswipe/images/full/14.jpg" rel="external"><img alt="Eclairs" src="photoswipe/images/thumb/14.jpg"></a>
+             <a href="photoswipe/images/full/15.jpg" rel="external"><img alt="Fruit tarts" src="photoswipe/images/thumb/15.jpg"></a>
+           </div> 
+      </div>
+    </div>
+    
+    <div data-role="footer" data-position="inline" class="footer" data-theme="b">
+      <div class="foothome">
+        <p class="footLeft">Copyright © 2014 Dolcissimo. All rights reserved.</p>
+        <p class="footRight">CALL US: 407-342-8630</p>
+      </div>
+    </div>
+      
+  </div> 
+
+  
+
+</body>
+</html>

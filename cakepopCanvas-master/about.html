@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
+
+	<title>Dolcissimo - About</title>
+
+	<link rel="stylesheet" href="styles.css"  />
+
+	<script type="text/javascript" src="ivank.js"></script><style type="text/css"></style>
+	<script type="text/javascript" src="Box2dWeb-2.1.a.3.min.js"></script>
+  	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="jcanvas.min.js"></script>
+	<script type="text/javascript" src="andy.js"></script>
+	
+
+
+	<style>
+
+		*{
+			overflow: visible !important;
+			z-index: 1;
+		}
+
+
+		canvas {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			opacity: 0.5;
+			overflow: scroll;
+			z-index: 0;
+/*			z-index: -2;*/
+	  	}
+/*	  	#over{
+	  		z-index: 0;
+	  	}*/
+	</style>
+
+</head>
+
+<body style="margin:0">
+
+	<canvas id="c" style="cursor: default"></canvas>
+
+	<div class="homeHead" >
+    	<div class="socialMedia">
+       		<a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+        	<a href="http://www.twitter.com"><img class="fb" src="img/twitter_top.png" alt="twitter"/></a>
+    	</div>
+    	<img src="img/logo.png" alt="logo" class="logo"/>  
+    	<a href="#contact"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+	</div>
+
+	<ul class="navigationcontent">
+      <li class="navthing">
+        <a href="home.html">
+          <p>Home</p>
+        </a>
+      </li>
+      <li class="current_navthing">
+        <a href="about.html">
+          <p>About</p>
+        </a>
+      </li>
+      <li class="navthing">
+        <a href="products.html">
+          <p>Products</p>
+        </a>
+      </li>
+      <li class="navthing">
+        <a href="services.html">
+          <p>Services</p>
+        </a>
+      </li>
+      <li class="navthing">
+        <a href="contact.html">
+          <p>Contact</p>
+        </a>
+      </li>
+    </ul>
+
+<!--     <div class="bignav">
+    	<ul>
+	        <li><a href="canvas.html"><p>Home</p></a></li>
+	        <li><a href="about.html"><p>About</p></a></li>
+	        <li><a href="products.html"><p>Products</p></a></li>
+	        <li><a href="services.html"><p>Services</p></a></li>
+	        <li><a href="contact.html"><p>Contact</p></a></li>
+    	</ul>
+    </div> -->
+
+	<div id="homeContent">
+
+    	<div id="imgback">
+        	<img id="homepic" src="img/home2.jpg" alt="Cake Slice"/>
+    		<div id="picfoot">COME VISIT US AT: 5492 Universal Boulevard, Orlando FL, 32813</div>
+		</div>
+
+
+      <h2>Welcome to Dolcissimo Bakery!</h2>
+      <div class="margin-content">	
+        <p>Here at Dolcissimo everything is made from scratch and our number one priority is excellence in food quality and service quality. Take a look around and come visit us soon for a sweet experience.</p>
+
+
+        <ul class="featured_content">
+          <li class="steph">
+            <a href="#cupcakes">
+              <img id="cuphome" src="img/cupcake_home.png" alt="sweet yummy goodness">
+              <p>Cupcakes</p>
+            </a>
+          </li>
+          <li class="steph">
+            <a href="#cakes">
+              <img id="cakehome" src="img/cake_home.png" alt="sweet yummy goodness">
+              <p>Cakes</p>
+            </a>
+          </li>
+          <li class="steph">
+            <a href="#pastries">
+              <img id="pasthome" src="img/pastry_home.png" alt="sweet yummy goodness">
+              <p>Pastries</p>
+            </a>
+          </li>
+        </ul>
+
+        <div class="littlenav">
+          <a href="#products" data-role="button" data-theme="a">Products</a>
+          <a href="#services" data-role="button" data-theme="a">Services</a>
+          <a href="#contact" data-role="button" data-theme="a">Contact</a>
+        </div>
+      </div>  
+    </div>
+
+    <div class="foothome">
+	    <p class="footLeft">Copyright &copy; 2014 Dolcissimo. All rights reserved.</p>
+	    <p class="footRight">CALL US: 407-342-8630</p>
+    </div>
+
+  
+
+</body>
+
+</html>

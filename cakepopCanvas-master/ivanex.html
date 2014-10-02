@@ -1,0 +1,47 @@
+<html>
+<head>
+     <script type="text/javascript" src="http://lib.ivank.net/ivank.js"></script>
+     <script type="text/javascript">
+     
+          var balls = [];	// balls
+          var dirs  = [];	// directions
+          var stage;
+     
+          function Start()
+          {
+               stage = new Stage("c");
+               
+               // background
+               var bg = new Bitmap(new BitmapData("white.jpg"));
+               bg.scaleX = stage.stageWidth / 1024;  
+               bg.scaleY = stage.stageHeight / 512;
+               stage.addChild(bg);
+               
+               var bd = new BitmapData("cakepop1.png");
+               for(var i=0; i<100; i++)
+               {
+                    var b = new Bitmap(bd);
+                    b.x = Math.random()*900;
+                    b.y = Math.random()*500;
+                    balls.push(b);
+                    dirs .push(new Point(2+Math.random()*8, 2+Math.random()*8));
+                    stage.addChild(b);
+               }
+               stage.addEventListener(Event.ENTER_FRAME, onEF);
+          }
+          
+          function onEF(e)
+          {
+               var w = stage.stageWidth-100, h = stage.stageHeight-100;
+               for(var i=0; i<balls.length; i++) 
+               {
+                    var b = balls[i], d = dirs[i];
+                    b.x += d.x;	 b.y += d.y;
+                    if(b.x < 0) d.x = Math.abs(d.x);  if(b.x > w) d.x = -Math.abs(d.x);
+                    if(b.y < 0) d.y = Math.abs(d.y);  if(b.y > h) d.y = -Math.abs(d.y);
+               }
+          }
+     </script>
+</head>
+<body onload="Start();"><canvas id="c"></canvas></body>
+</html>
