@@ -7,12 +7,8 @@
 	<title>Dolcissimo - Contact</title>
 
 	<link rel="stylesheet" href="styles.css"  />
-
+	<link rel="stylesheet" href="hamburger.css"  />
 	
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
-
 	<style>
 
 		*{
@@ -25,16 +21,18 @@
 
 <body style="margin:0">
 
-	<div data-role="panel" id="mypanel" data-position="left" data-position-fixed="false" data-display="reveal" data-theme="a">  
-	    <ul data-role="listview" class="nav-search">
-	       	<li>Menu</li>
-	      	<li><a href="home.html" class="ui-btn">Home</a></li>
-	      	<li><a href="about.html" class="ui-btn">About</a></li>
-	      	<li><a href="products.html" class="ui-btn">Products</a></li>
-	      	<li><a href="services.html" class="ui-btn">Services</a></li>
-	      	<li><a href="contact.html" class="ui-btn">Contact</a></li>
-	    </ul>   
-	</div> 
+<ul class="navigation">
+	<li class="nav-item"><a href="home.html">Home</a></li>
+	<li class="nav-item"><a href="about.html">About</a></li>
+	<li class="nav-item"><a href="products.html">Products</a></li>
+	<li class="nav-item"><a href="services.html">Services</a></li>
+	<li class="nav-item"><a href="contact.html">Contact</a></li>
+</ul>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+
+<div class="site-wrap">
 
 	<div class="homeHead" >
     	<div class="socialMedia">
@@ -44,7 +42,7 @@
     	<div class="logo"><img src="img/logo.png" alt="logo"/></div>  
     	<a href="contact.html"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
 
-    	<a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+    	<button id="bars" onclick="shownav">Bars</button>
 
 	</div>
 
@@ -131,14 +129,12 @@
 	    </div>
     </div>
 
-    </div>
-
     <div class="foothome">
 	    <p class="footLeft">Copyright &copy; 2014 Dolcissimo. All rights reserved.</p>
 	    <p class="footRight">CALL US: 407-342-8630</p>
     </div>
 
-  
+ </div> 
 
 </body>
 

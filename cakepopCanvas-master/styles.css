@@ -58,7 +58,7 @@ img{
 }*/
 
 .homeHead{
-	background-color: white;
+/*	background-color: white;*/
 	border:none;
 	text-align: center;
 	display: flex;
@@ -514,7 +514,10 @@ td{
 }
 
 
-
+/*#mypanel .nav-search{
+	display: none;
+	list-style: none;
+}*/
 /* Large screens */
 @media all and (min-width: 600px) { /*Between max screen size and 600*/
   .ui-header > .ui-btn {display:none;} /*Hide hamburger tab*/
@@ -525,6 +528,13 @@ td{
   .homeHead .bars{
 	display: none;
 }
+/*.nav-search{
+	display: none;
+}*/
+
+	#contactContent h2{
+		display: none;
+	}
 
 }
 @media (max-width: 599px) and (min-width: 260px) {
@@ -535,6 +545,13 @@ td{
   .navigationcontent{
   	display: none;
   }
+/*  .nav-search{
+	display: inline-block;
+}*/
+  #contactContent h2{
+	display: inline-block;
+}
+
   .bignav {display:none;
   } /*Hide big nav*/
   .bars{

@@ -8,12 +8,9 @@
 
 	<link rel="stylesheet" href="styles.css"  />
 
-	<script type="text/javascript" src="ivank.js"></script><style type="text/css"></style>
-	<script type="text/javascript" src="Box2dWeb-2.1.a.3.min.js"></script>
-  	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-	<script src="jcanvas.min.js"></script>
-	<script type="text/javascript" src="andy.js"></script>
-	
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
   <style>
 
     *{
@@ -26,14 +23,28 @@
 
 <body style="margin:0">
 
-	<div class="homeHead" >
-    	<div class="socialMedia">
-       		<a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
-        	<a href="http://www.twitter.com"><img class="twit" src="img/twitter_top.png" alt="twitter"/></a>
-    	</div>
-    	<div class="logo"><img src="img/logo.png" alt="logo"/></div>   
-    	<a href="contact.html"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
-	</div>
+  <div data-role="panel" id="mypanel" data-position="left" data-position-fixed="false" data-display="reveal" data-theme="a">  
+      <ul data-role="listview" class="nav-search">
+          <li>Menu</li>
+          <li><a href="home.html" class="ui-btn">Home</a></li>
+          <li><a href="about.html" class="ui-btn">About</a></li>
+          <li><a href="products.html" class="ui-btn">Products</a></li>
+          <li><a href="services.html" class="ui-btn">Services</a></li>
+          <li><a href="contact.html" class="ui-btn">Contact</a></li>
+      </ul>   
+  </div> 
+
+  <div class="homeHead" >
+      <div class="socialMedia">
+          <a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
+          <a href="http://www.twitter.com"><img class="twit" src="img/twitter_top.png" alt="twitter"/></a>
+      </div>
+      <div class="logo"><img src="img/logo.png" alt="logo"/></div>  
+      <a href="contact.html"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
+
+      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+
+  </div>
 
 	<ul class="navigationcontent">
       <li class="navthing">

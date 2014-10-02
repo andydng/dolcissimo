@@ -6,9 +6,6 @@
 
 	<title>Dolcissimo - Home</title>
 
-	  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 
 	<script type="text/javascript" src="ivank.js"></script><style type="text/css"></style>
 	<script type="text/javascript" src="Box2dWeb-2.1.a.3.min.js"></script>
@@ -29,6 +26,10 @@
 			overflow: visible !important;
 			z-index: 1;
 		}
+
+    .nav-search{
+      z-index: 2 !important;
+    }
 
 
 		canvas {
@@ -51,7 +52,7 @@
 
 	<canvas id="c" style="cursor: default"></canvas>
 
-	  <div data-role="panel" id="mypanel" data-position="left" data-position-fixed="false" data-display="reveal" data-theme="a">  
+<!-- 	  <div data-role="panel" id="mypanel" data-position="left" data-position-fixed="false" data-display="reveal" data-theme="a">  
       <ul data-role="listview" class="nav-search">
           <li>Menu</li>
           <li><a href="home.html" class="ui-btn">Home</a></li>
@@ -60,7 +61,7 @@
           <li><a href="services.html" class="ui-btn">Services</a></li>
           <li><a href="contact.html" class="ui-btn">Contact</a></li>
       </ul>   
-  </div> 
+  </div>  -->
 
   <div class="homeHead" >
       <div class="socialMedia">
@@ -70,8 +71,8 @@
       <div class="logo"><img src="img/logo.png" alt="logo"/></div>  
       <a href="contact.html"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
 
-      <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
-
+<!--       <a class="bars" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b">Bars</a>
+ -->
   </div>
 
 	<ul class="navigationcontent">
