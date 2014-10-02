@@ -13,7 +13,7 @@
   
   /* non-critical appearance styles */
   list-style: none;
-  background: #111;
+  background-color: rgb(28, 187, 180);
 }
 
 /* Navigation Menu - List items */
@@ -28,16 +28,18 @@
   /* non-critical appearance styles */
   display: block;
   padding: 1em;
-  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  background-color: rgb(28, 187, 180);
   color: white;
   font-size: 1.2em;
   text-decoration: none;
+  border:none;
   transition: color 0.2s, background 0.5s;
 }
 
 .nav-item a:hover {
-  color: #c74438;
-  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+  color: rgb(28, 187, 180);
+  background: white;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 50%,rgba(28, 187, 180,0) 100%);
 }
 
 /* Site Wrapper - Everything that isn't navigation */
