@@ -83,6 +83,7 @@ img{
 	align-content: flex-start;
 	height:5%;
 	max-width: 800px;
+	margin-bottom: 80px;
 }
 
 .socialMedia{
@@ -413,12 +414,16 @@ td{
 	margin:auto;
 	text-align: center;
 	font-size: 1.2em;
-  	padding: 1%;
+
+/*  	padding-top: 2%;*/
 }
 
 .navthing a{
 	text-decoration: none;
 	color: rgb(28, 187, 180);
+}
+.navthing a p,.current_navthing a p{
+  	padding: 7.5%;
 }
 
 .current_navthing{
@@ -519,6 +524,11 @@ td{
 	list-style: none;
 }*/
 /* Large screens */
+@media all and (max-width: 750px){
+	.homeHead{
+		margin-bottom: 12%;
+	}
+}
 @media all and (min-width: 600px) { /*Between max screen size and 600*/
   .ui-header > .ui-btn {display:none;} /*Hide hamburger tab*/
   .littlenav {
@@ -538,6 +548,12 @@ td{
 
 }
 @media (max-width: 599px) and (min-width: 260px) {
+  .homeHead .logo{
+  	height:10%;
+  }
+  .homeHead{
+  	margin-bottom: 0;
+  }
   .homeHead .bars{
 	display: inline-block;
 	text-align: left;
