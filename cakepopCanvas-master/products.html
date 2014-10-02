@@ -8,6 +8,43 @@
 
   <link rel="stylesheet" href="hamburger.css"  />
   <link rel="stylesheet" href="styles.css"  />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="jquery.tap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        // making the pics big
+      $("#cakespage").on("tap",function(event){
+        $("#fill").empty();
+        $("#fill").html("<a href='#cakeone'><img src='img/cake1.jpg' width='30%' alt='cakes'/></a><a href='#cake2'><img src='img/cake2.jpg' width='30%' alt='cakes'/></a><a href='#cake3'><img src='img/cake3.jpg' width='30%' alt='cakes'/></a><a href='#cake4'><img src='img/cake4.jpg' width='30%' alt='cakes'/></a><a href='#cake5'><img src='img/cake5.jpg' width='30%' alt='cakes'/></a>");
+
+      });
+      $("#cupcakespage").on("tap",function(event){
+        $("#fill").empty();
+        $("#fill").html("<a href='#cake6'><img src='img/cake6.jpg' width='30%' alt='cakes'/></a><a href='#cake7'><img src='img/cake7.jpg' width='30%' alt='cakes'/></a><a href='#cake8'><img src='img/cake8.jpg' width='30%' alt='cakes'/></a><a href='#cake9'><img src='img/cake9.jpg' width='30%' alt='cakes'/></a><a href='#cake10'><img src='img/cake10.jpg' width='30%' alt='cakes'/></a>");
+
+      });
+      $("#pastriespage").on("tap",function(event){
+        $("#fill").empty();
+        $("#fill").html("<a href='#cake11'><img src='img/cake11.jpg' width='30%' alt='cakes'/></a><a href='#cake12'><img src='img/cake12.jpg' width='30%' alt='cakes'/></a><a href='#cake13'><img src='img/cake13.jpg' width='30%' alt='cakes'/></a><a href='#cake14'><img src='img/cake14.jpg' width='30%' alt='cakes'/></a><a href='#cake15'><img src='img/cake15.jpg' width='30%' alt='cakes'/></a>");
+
+      });
+
+
+      // making pics small again
+      $(".foothome").on("tap",function(event){
+        $("#fill").empty();
+      });
+      $(".navigationcontent").on("tap",function(event){
+        $("#fill").empty();
+      });
+      $(".homeHead").on("tap",function(event){
+        $("#fill").empty();
+      });
+
+
+      });
+
+  </script>
 
   <style>
 
@@ -82,49 +119,81 @@
 
         <ul class="featured_content">
           <li class="steph">
-            <a href="#cakes">
+            <!-- <a href="#cakes"> -->
               <img id="cakespage" src="img/cakes.jpg" alt="sweet yummy goodness">
               <p>Cakes</p>
-            </a>
+            <!-- </a> -->
           </li>
           <li class="steph">
-            <a href="#cupcakes">
+            <!-- <a href="#cupcakes"> -->
               <img id="cupcakespage" src="img/cupcakes.jpg" alt="sweet yummy goodness">
               <p>Cupcakes</p>
-            </a>
+            <!-- </a> -->
           </li>
           <li class="steph">
-            <a href="#pastries">
+            <!-- <a href="#pastries"> -->
               <img id="pastriespage" src="img/pastries.jpg" alt="sweet yummy goodness">
               <p>Pastries</p>
-            </a>
+            <!-- </a> -->
           </li>
         </ul>
+        <div id="fill"></div>
 
 
       <!-- lightbox container hidden with CSS -->
-      <a href="#_" class="lightbox" id="cakes">
-        <img src="img/cakes.jpg" alt="img of cakes">
+      <a href="#_" class="lightbox" id="cakeone">
+        <img src="img/cake1.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake2">
+        <img src="img/cake2.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake3">
+        <img src="img/cake3.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake4">
+        <img src="img/cake4.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake5">
+        <img src="img/cake5.jpg" alt="img of cakes">
       </a>
 
-      <!-- lightbox container hidden with CSS -->
-      <a href="#_" class="lightbox" id="cupcakes">
-        <img src="img/cupcakes.jpg" alt="img of cakes">
+      <a href="#_" class="lightbox" id="cake6">
+        <img src="img/cake6.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake7">
+        <img src="img/cake7.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake8">
+        <img src="img/cake8.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake9">
+        <img src="img/cake9.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake10">
+        <img src="img/cake10.jpg" alt="img of cakes">
       </a>
 
-      <!-- lightbox container hidden with CSS -->
-      <a href="#_" class="lightbox" id="pastries">
-        <img src="img/pastries.jpg" alt="img of cakes">
+      <a href="#_" class="lightbox" id="cake11">
+        <img src="img/cake11.jpg" alt="img of cakes">
       </a>
-
-
-      </div>
-    </div>
+      <a href="#_" class="lightbox" id="cake12">
+        <img src="img/cake12.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake13">
+        <img src="img/cake13.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake14">
+        <img src="img/cake14.jpg" alt="img of cakes">
+      </a>
+      <a href="#_" class="lightbox" id="cake15">
+        <img src="img/cake15.jpg" alt="img of cakes">
+      </a>
 
     <div class="foothome">
 	    <p class="footLeft">Copyright &copy; 2014 Dolcissimo. All rights reserved.</p>
 	    <p class="footRight">CALL US: 407-342-8630</p>
     </div>
+
 
   </div>
 
