@@ -254,6 +254,7 @@ td{
 }
 .serviceimg img{
 	width: 100%;
+
 }
 
 
@@ -557,7 +558,7 @@ td{
 		border:none;
 	}
 
-	#contactContent h2,#aboutContent h2,#productsContent h2,#servicesContent h2{
+	#contactContent h2,#productsContent h2,#servicesContent h2{
 		display: none;
 	}
 
