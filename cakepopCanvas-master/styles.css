@@ -436,8 +436,11 @@ td{
   	padding-left: 1%;
   	padding-right: 1%;
   	background-color: rgb(28, 187, 180);
-  	border-radius: 50%;
-  	border: double white;
+
+ 	border-top:double white;
+ 	border-bottom: double white;
+ 	border-right: none;
+  	border-left: none;
 }
 
 .current_navthing a{
@@ -454,8 +457,12 @@ td{
   	padding-left: 1%;
   	padding-right: 1%;
   	background-color: rgba(28, 187, 180, .5);
-  	border-radius: 50%;
-  	border: double white;
+ 	
+ 	border-top:double white;
+ 	border-bottom: double white;
+ 	border-right: none;
+  	border-left: none;
+  /*	border: double white;*/
 }
 
 .featured_content{
