@@ -4,7 +4,7 @@
 
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
 
-	<title>Dolcissimo - About</title>
+	<title>Dolcissimo - Products</title>
 
 	<link rel="stylesheet" href="styles.css"  />
 
@@ -13,6 +13,7 @@
   	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script src="jcanvas.min.js"></script>
 	<script type="text/javascript" src="andy.js"></script>
+	
   <style>
 
     *{
@@ -25,13 +26,12 @@
 
 <body style="margin:0">
 
-
 	<div class="homeHead" >
     	<div class="socialMedia">
        		<a href="http://www.facebook.com"><img class="fb" src="img/fb_top.png" alt="facebook"/></a> 
         	<a href="http://www.twitter.com"><img class="twit" src="img/twitter_top.png" alt="twitter"/></a>
     	</div>
-    	<div class="logo"><img src="img/logo.png" alt="logo"/></div>  
+    	<div class="logo"><img src="img/logo.png" alt="logo"/></div>   
     	<a href="contact.html"><img  class="quotes" src="img/get_quote.png"  alt="get quote"/></a> 
 	</div>
 
@@ -41,12 +41,12 @@
           <p>Home</p>
         </a>
       </li>
-      <li class="current_navthing">
+      <li class="navthing">
         <a href="about.html">
           <p>About</p>
         </a>
       </li>
-      <li class="navthing">
+      <li class="current_navthing">
         <a href="products.html">
           <p>Products</p>
         </a>
@@ -64,18 +64,50 @@
     </ul>
 
 
-	<div id="aboutContent">
-	    <img src="img/home3.jpg" alt="Pastries"/>
-	    <h2>Who Are We?</h2>	
-	    <div class="margin-content">	
-	        <p class="quote">
-	        	<span class="quotemarks">"</span>
-	        	Life is short, eat dessert first.
-	        	<span class="quotemarks">"</span>
-	        </p>
-	        <p>Dolcissimo Bakery is a family owned and operated business based in Orlando, Fl. It all started as a hobby for Maria; she would bake cupcakes and cookies for her friends whenever she had a chance, and whenever there was a party her cakes were the most wanted. Soon she became very well known and recommended by friends, and she was encouranged by her husband Paolo to start selling her baked goods, and so she did and as they say, the rest is history. In no time Maria had so many orders that she could no longer do everything on her own and so Dolcissimo was born.</p>
-	    </div>
-	</div>
+	<div id="productsContent">
+      <div class="margin-content">	
+        <p>We offer a variety of baked goods, and we are constantly innovating to bring you the best product in town. Take a look around and if you see something you like call us and we'll make it just for you.</p>
+
+        <ul class="featured_content">
+          <li class="steph">
+            <a href="#cakes">
+              <img id="cakespage" src="img/cakes.jpg" alt="sweet yummy goodness">
+              <p>Cakes</p>
+            </a>
+          </li>
+          <li class="steph">
+            <a href="#cupcakes">
+              <img id="cupcakespage" src="img/cupcakes.jpg" alt="sweet yummy goodness">
+              <p>Cupcakes</p>
+            </a>
+          </li>
+          <li class="steph">
+            <a href="#pastries">
+              <img id="pastriespage" src="img/pastries.jpg" alt="sweet yummy goodness">
+              <p>Pastries</p>
+            </a>
+          </li>
+        </ul>
+
+
+      <!-- lightbox container hidden with CSS -->
+      <a href="#_" class="lightbox" id="cakes">
+        <img src="img/cakes.jpg" alt="img of cakes">
+      </a>
+
+      <!-- lightbox container hidden with CSS -->
+      <a href="#_" class="lightbox" id="cupcakes">
+        <img src="img/cupcakes.jpg" alt="img of cakes">
+      </a>
+
+      <!-- lightbox container hidden with CSS -->
+      <a href="#_" class="lightbox" id="pastries">
+        <img src="img/pastries.jpg" alt="img of cakes">
+      </a>
+
+
+      </div>
+    </div>
 
     <div class="foothome">
 	    <p class="footLeft">Copyright &copy; 2014 Dolcissimo. All rights reserved.</p>
