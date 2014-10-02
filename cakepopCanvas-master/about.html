@@ -6,11 +6,8 @@
 
 	<title>Dolcissimo - About</title>
 
-	<link rel="stylesheet" href="styles.css"  />
-
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+	<link rel="stylesheet" href="hamburger.css"  />
+  <link rel="stylesheet" href="styles.css"  />
   
   <style>
 
@@ -24,17 +21,19 @@
 
 <body style="margin:0">
 
+  <ul class="navigation">
+    <li class="nav-item"><a href="home.html">Home</a></li>
+    <li class="nav-item"><a href="about.html">About</a></li>
+    <li class="nav-item"><a href="products.html">Products</a></li>
+    <li class="nav-item"><a href="services.html">Services</a></li>
+    <li class="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
 
-  <div data-role="panel" id="mypanel" data-position="left" data-position-fixed="false" data-display="reveal" data-theme="a">  
-      <ul data-role="listview" class="nav-search">
-          <li>Menu</li>
-          <li><a href="home.html" class="ui-btn">Home</a></li>
-          <li><a href="about.html" class="ui-btn">About</a></li>
-          <li><a href="products.html" class="ui-btn">Products</a></li>
-          <li><a href="services.html" class="ui-btn">Services</a></li>
-          <li><a href="contact.html" class="ui-btn">Contact</a></li>
-      </ul>   
-  </div> 
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger"></label>
+
+  <div class="site-wrap">
+  
 
   <div class="homeHead" >
       <div class="socialMedia">
