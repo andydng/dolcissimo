@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Great+Vibes);
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 
-@font-face {
+/*@font-face {
     font-family: 'scriptFont';
     src: url(../fonts/dancing-script.regular.ttf);
 }
@@ -16,7 +16,7 @@
     font-family: 'bodyFont';
     src: url(../fonts/open-sans.regular.ttf);
 }
-
+*/
 body{
 	font-family: 'Open Sans', sans-serif;
 /*	font-family:bodyFont, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
@@ -508,7 +508,8 @@ td{
 	font-size: 1.5em;
 }
 
-.bars{
+
+.homeHead .bars{
 	display: none;
 }
 
@@ -521,9 +522,19 @@ td{
     display: none;
   }
 
+  .homeHead .bars{
+	display: none;
+}
 
 }
 @media (max-width: 599px) and (min-width: 260px) {
+  .homeHead .bars{
+	display: inline-block;
+	text-align: left;
+	}
+  .navigationcontent{
+  	display: none;
+  }
   .bignav {display:none;
   } /*Hide big nav*/
   .bars{
