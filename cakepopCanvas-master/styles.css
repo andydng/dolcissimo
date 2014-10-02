@@ -517,7 +517,9 @@ td{
 .homeHead .bars{
 	display: none;
 }
-
+.nav-trigger, label{
+	display: none;
+}
 
 /*#mypanel .nav-search{
 	display: none;
@@ -548,6 +550,9 @@ td{
 
 }
 @media (max-width: 599px) and (min-width: 260px) {
+	.nav-trigger, label{
+		display: block;
+	}
   .homeHead .logo{
   	height:10%;
   }
